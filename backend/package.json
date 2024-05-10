@@ -1,0 +1,19 @@
+{
+  "name": "zone-guard-be",
+  "version": "1.0.0",
+  "description": "API for ZoneGuard",
+  "main": "build/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patryk-wlaz/zone-guard.git"
+  },
+  "author": "Patryk Wlaź",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/patryk-wlaz/zone-guard/issues"
+  },
+  "homepage": "https://github.com/patryk-wlaz/zone-guard#readme"
+}
