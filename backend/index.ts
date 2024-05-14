@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.get('/node-env', (req, res) => {
+  res.send(`Dotenv says: ${process.env.NODE_ENV}`)
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
