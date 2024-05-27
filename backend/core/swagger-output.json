@@ -1,0 +1,68 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "My API",
+    "description": "Description",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/node-env": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dummy": {
+      "post": {
+        "tags": [
+          "Dummy endpoints"
+        ],
+        "description": "Endpoint to add a dummy.",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "dumbo parameter.",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "dumbo": {
+                  "type": "string",
+                  "example": "whatever"
+                }
+              },
+              "required": [
+                "dumbo"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
